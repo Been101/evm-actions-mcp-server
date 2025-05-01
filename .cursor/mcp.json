@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "evm-actions-mcp-server": {
+      "command": "npm",
+      "args": ["run", "start"]
+    }
+  }
+}
