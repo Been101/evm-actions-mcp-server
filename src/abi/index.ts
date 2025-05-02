@@ -1,4 +1,4 @@
-export const contractAddress = "0xd639E2d851f71E08db4aAb3023388b9F0a82C699";
+export const ContractAddress = "0xd639E2d851f71E08db4aAb3023388b9F0a82C699";
 export const MonadPixelABI = [
   {
     inputs: [],

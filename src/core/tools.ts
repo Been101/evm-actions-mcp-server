@@ -3,7 +3,7 @@ import { z } from "zod";
 import { getSupportedNetworks, getRpcUrl } from "./chains.js";
 import * as services from "./services/index.js";
 import { type Address, type Hex } from "viem";
-import { MonadPixelABI } from "../abi/index.js";
+import { MonadPixelABI, ContractAddress } from "../abi/index.js";
 
 /**
  * Register all EVM-related tools with the MCP server
@@ -402,7 +402,7 @@ export function registerEVMTools(server: McpServer) {
         const parsedAbi = typeof abi === "string" ? JSON.parse(abi) : abi;
 
         const params = {
-          address: (contractAddress as Address) || contractAddress,
+          address: (contractAddress as Address) || ContractAddress,
           abi: parsedAbi,
           functionName,
           args,
